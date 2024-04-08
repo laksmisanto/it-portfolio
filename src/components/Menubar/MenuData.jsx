@@ -4,27 +4,27 @@ export const MenuData = [
     title: "Home",
   },
   {
-    link: "page/about",
+    link: "pages/about",
     title: "About us",
   },
   {
-    link: "page/our-service",
+    link: "pages/our-service",
     title: "Our Service",
   },
   {
-    link: "page/about",
+    link: "pages/about",
     title: "Portfolio",
   },
   {
-    link: "page/gallery",
+    link: "pages/gallery",
     title: "Gallery",
   },
   {
-    link: "page/blog",
+    link: "pages/blog",
     title: "Blog",
   },
   {
-    link: "page/contact",
+    link: "pages/contact",
     title: "Contact us",
   },
 ];

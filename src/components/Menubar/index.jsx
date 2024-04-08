@@ -17,13 +17,13 @@ const Menubar = () => {
                 LaksmiSanto
               </span>
             </div>
-            <nav className="w-4/5">
+            <nav className="w-4/5 hidden md:block">
               <List className="flex justify-end">
                 {MenuData.map((item, i) => (
                   <ListItem
                     href={item.link}
                     key={i}
-                    className="font-primaryFont text-base text-textColor mx-2 my-2 last:mr-0"
+                    className="font-primaryFont text-base text-textColor mx-2 my-2 last:mr-0 hover:text-btnBg hover:tracking-wide ease-linear duration-200 "
                   >
                     {item.title}
                   </ListItem>

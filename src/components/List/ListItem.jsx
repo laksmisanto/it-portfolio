@@ -1,9 +1,12 @@
 import React from "react";
+import Link from "next/link";
 
 const ListItem = ({ children, className, href }) => {
   return (
     <li className={`${className}`}>
-      <a href={href}>{children}</a>
+      <Link href={href} replace={false}>
+        {children}
+      </Link>
     </li>
   );
 };

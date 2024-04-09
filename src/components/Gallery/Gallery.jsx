@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import Container from "../Container";
-import { ServiceData } from "./ServiceData";
-import Grid from "../Grid";
+import Image from "next/image";
+import { GalleryData } from "./GalleryData";
 import { motion } from "framer-motion";
+import Grid from "../Grid";
 
-const OurService = () => {
+const Gallery = () => {
   let count = 0;
   return (
     <>
@@ -13,16 +14,16 @@ const OurService = () => {
         <Container>
           <div className="mb-10">
             <h2 className="font-primaryFont font-bold text-3xl text-textColor">
-              Our Service
+              Gallery
             </h2>
-            <p className="font-primaryFont text-base w-2/5">
+            <p className="font-primaryFont text-base  lg:w-2/5">
               This is our service section. Har we are discus our course module.
             </p>
           </div>
-          <Grid className="gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 flex-wrap">
-            {ServiceData.map(
+          <Grid className="gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 flex-wrap">
+            {GalleryData.map(
               (item, i) => (
-                (count = count + 0.25),
+                (count = count + 0.2),
                 (
                   <motion.div
                     initial={{ x: 20, y: 20, opacity: 0 }}
@@ -33,16 +34,15 @@ const OurService = () => {
                       ease: "easeInOut",
                     }}
                     viewport={{ once: true }}
-                    className="shadow-xl p-4 rounded-xl text-center"
                     key={i}
                   >
-                    <i className="inline-block w-12 h-12">{item.icon}</i>
-                    <h4 className="font-primaryFont font-bold text-xl text-textColor pb-2">
-                      {item.name}
-                    </h4>
-                    <p className="font-primaryFont text-base text-textColor">
-                      {item.description}
-                    </p>
+                    <Image
+                      src={item.img}
+                      alt="Gallery Image"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
                   </motion.div>
                 )
               )
@@ -54,4 +54,4 @@ const OurService = () => {
   );
 };
 
-export default OurService;
+export default Gallery;

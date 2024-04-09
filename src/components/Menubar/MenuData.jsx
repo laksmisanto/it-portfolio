@@ -12,10 +12,6 @@ export const MenuData = [
     title: "Our Service",
   },
   {
-    link: "pages/about",
-    title: "Portfolio",
-  },
-  {
     link: "pages/gallery",
     title: "Gallery",
   },

@@ -5,16 +5,17 @@ import ListItem from "../List/ListItem";
 import { MenuData } from "./MenuData";
 import Grid from "../Grid";
 import Flex from "../Flex/Flex";
+import Link from "next/link";
 
 const Menubar = () => {
   return (
     <>
       <div className="bg-white shadow">
         <Container>
-          <Flex className="justify-center items-center">
+          <Flex className="justify-center items-center py-4">
             <div className="w-1/5">
               <span className="font-primaryFont text-xl font-bold text-btnBg">
-                LaksmiSanto
+                <Link href="/">LaksmiSanto</Link>
               </span>
             </div>
             <nav className="w-4/5 hidden md:block">
@@ -23,7 +24,7 @@ const Menubar = () => {
                   <ListItem
                     href={item.link}
                     key={i}
-                    className="font-primaryFont text-base text-textColor mx-2 my-2 last:mr-0 hover:text-btnBg hover:tracking-wide ease-linear duration-200 "
+                    className="font-primaryFont text-base text-textColor mx-2 last:mr-0 hover:text-btnBg hover:tracking-wide ease-linear duration-200 "
                   >
                     {item.title}
                   </ListItem>

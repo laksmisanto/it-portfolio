@@ -13,6 +13,7 @@ module.exports = {
       bgColor: "#FFF7F1",
       textColor: "#222831",
       btnBg: "#FC6736",
+      borderColor: "#dddddd",
     },
     fontFamily: {
       primaryFont: ["Inter", "sans-serif"],

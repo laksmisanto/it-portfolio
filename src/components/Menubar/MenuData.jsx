@@ -4,23 +4,23 @@ export const MenuData = [
     title: "Home",
   },
   {
-    link: "pages/about",
+    link: "http://localhost:3000/pages/about",
     title: "About us",
   },
   {
-    link: "pages/our-service",
+    link: "http://localhost:3000/pages/our-service",
     title: "Our Service",
   },
   {
-    link: "pages/gallery",
+    link: "http://localhost:3000/pages/gallery",
     title: "Gallery",
   },
   {
-    link: "pages/blog",
+    link: "http://localhost:3000/pages/blog",
     title: "Blog",
   },
   {
-    link: "pages/contact",
+    link: "http://localhost:3000/pages/contact",
     title: "Contact us",
   },
 ];

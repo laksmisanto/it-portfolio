@@ -8,13 +8,11 @@ import ContactUs from "@/components/ContactUs/ContactUs";
 export default function Home() {
   return (
     <>
-      <Layout>
-        <Banner />
-        <Course />
-        <OurService />
-        <Gallery />
-        <ContactUs />
-      </Layout>
+      <Banner />
+      <Course />
+      <OurService />
+      <Gallery />
+      <ContactUs />
     </>
   );
 }

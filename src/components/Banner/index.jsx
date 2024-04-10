@@ -25,7 +25,9 @@ const Banner = () => {
                 from more than 30 trendy options.
               </p>
               <div className="text-center sm:text-start">
-                <NavLink href="pages/contact">Contact Us</NavLink>
+                <NavLink href="http://localhost:3000/pages/contact">
+                  Contact Us
+                </NavLink>
               </div>
             </div>
             <div className="w-full sm:w-2/5 ">

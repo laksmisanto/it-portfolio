@@ -18,7 +18,7 @@ const Banner = () => {
               <p className="font-primaryFont text-textColor text-sm tracking-wider mb-5">
                 Your Best Chose, Our Best Service
               </p>
-              <p className="font-primaryFont text-textColor text-base w-10/12">
+              <p className="font-primaryFont text-textColor text-base text-center md:text-left w-full lg:w-10/12">
                 With a vision to turn manpower into assets, Creative IT
                 Institute is ready to enhance your learning experience with
                 skilled mentors and updated curriculum. Pick your desired course

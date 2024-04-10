@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import TextField from "@mui/material/TextField";
 import Flex from "@/components/Flex/Flex";
@@ -9,12 +8,12 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const page = () => {
-  const [course, setCourse] = useState();
+  // const [course, setCourse] = useState();
 
-  const handleChange = (event) => {
-    setCourse(event.target.value);
-  };
-  console.log(course);
+  // const handleChange = (event) => {
+  //   setCourse(event.target.value);
+  // };
+  // console.log(course);
   return (
     <>
       <div className="bg-bgColor">
@@ -58,9 +57,9 @@ const page = () => {
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   name="course"
-                  value={course}
+                  // value={course}
                   label="Course Name"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                   placeholder="Select your course"
                 >
                   <MenuItem value={`Graphics Design`}>Graphics design</MenuItem>

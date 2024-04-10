@@ -60,7 +60,7 @@ const page = () => {
                 </Flex>
               </Flex>
               <Link
-                href="http://localhost:3000/pages/form"
+                href="pages/form"
                 className="font-primaryFont text-base text-bgColor px-4 py-2 bg-btnBg border border-btnBg rounded hover:bg-bgColor hover:text-btnBg duration-150 ease-linear mt-2 mb-4 inline-block"
               >
                 Admission

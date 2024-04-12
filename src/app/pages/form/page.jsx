@@ -19,12 +19,12 @@ const page = () => {
       <div className="bg-bgColor">
         <Container>
           <Flex className="w-full h-screen justify-center items-center">
-            <div className="mx-auto w-2/5 p-5 shadow-xl rounded-xl border border-borderColor">
+            <div className="mx-auto w-full lg:w-2/5 p-5 shadow-xl rounded-xl border border-borderColor">
               <div className="text-center mb-5">
-                <h2 className="font-primaryFont font-bold text-2xl text-textColor">
+                <h2 className="font-primaryFont font-bold text-xl md:text-2xl text-textColor">
                   Give valid information
                 </h2>
-                <p className="font-primaryFont text-base text-textColor">
+                <p className="font-primaryFont text-sm md:text-base text-textColor">
                   After fill-up form our team contact you
                 </p>
               </div>

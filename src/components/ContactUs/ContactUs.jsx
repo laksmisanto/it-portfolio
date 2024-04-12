@@ -36,15 +36,17 @@ const ContactUs = () => {
               <div className="lg:col-span-2">
                 <Grid className="mt-10 grid-cols-1 gap-6">
                   {ContactUsData.map((item, i) => (
-                    <Flex className=" items-center" key={i}>
-                      <Flex className="w-14 h-14 md:w-16 md:h-16 mr-2 rounded-md bg-btnBg justify-center items-center">
-                        {item.icon}
-                      </Flex>
+                    <Flex className="items-center  gap-2" key={i}>
                       <div>
-                        <p className="font-primaryFont text-base text-textColor max-w-80">
+                        <Flex className="w-14 h-14 md:w-16 md:h-16 rounded-md bg-btnBg justify-center items-center">
+                          {item.icon}
+                        </Flex>
+                      </div>
+                      <div>
+                        <p className="font-primaryFont text-sm md:text-base text-textColor lg:max-w-80">
                           {item.text}
                         </p>
-                        <p className="font-primaryFont text-base text-textColor max-w-80">
+                        <p className="font-primaryFont text-sm md:text-base text-textColor lg:max-w-80">
                           {item.text2}
                         </p>
                       </div>

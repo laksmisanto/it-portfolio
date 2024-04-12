@@ -15,7 +15,7 @@ const OurService = () => {
             <h2 className="font-primaryFont font-bold text-3xl text-textColor">
               Our Service
             </h2>
-            <p className="font-primaryFont text-base w-2/5">
+            <p className="font-primaryFont text-base max-w-fit lg:w-2/5">
               This is our service section. Har we are discus our course module.
             </p>
           </div>

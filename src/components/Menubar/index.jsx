@@ -5,7 +5,7 @@ import ListItem from "../List/ListItem";
 import { MenuData } from "./MenuData";
 import Grid from "../Grid";
 import Flex from "../Flex/Flex";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const Menubar = () => {
   return (
@@ -15,7 +15,7 @@ const Menubar = () => {
           <Flex className="justify-center items-center py-4">
             <div className="w-1/5">
               <span className="font-primaryFont text-xl font-bold text-btnBg">
-                <Link href="/">LaksmiSanto</Link>
+                <Link to="/">LaksmiSanto</Link>
               </span>
             </div>
             <nav className="w-4/5 hidden md:block">

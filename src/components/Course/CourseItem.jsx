@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import Flex from "../Flex/Flex";
+import { Link } from "react-router-dom";
 
 const CourseItem = ({
   img,
@@ -31,13 +31,13 @@ const CourseItem = ({
           <p className="font-primaryFont text-base text-textColor">{status}</p>
           <Flex className="flex-row flex-wrap justify-between mt-4 text-center">
             <Link
-              href={discountLink}
+              to={discountLink}
               className="font-primaryFont text-base text-bgColor bg-btnBg border border-btnBg rounded ease-linear duration-200 hover:text-btnBg hover:bg-bgColor px-4 py-2 w-full sm:w-auto"
             >
               Click for Discount
             </Link>
             <Link
-              href={courseDetailsLink}
+              to={courseDetailsLink}
               className="font-primaryFont text-base text-bgColor bg-btnBg border border-btnBg rounded ease-linear duration-200 hover:text-btnBg hover:bg-bgColor px-4 py-2 w-full sm:w-auto mt-3 sm:mt-0"
             >
               Course Details

@@ -3,7 +3,7 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 import Flex from "@/components/Flex/Flex";
 
-const page = () => {
+const Contact = () => {
   return (
     <>
       <div className="bg-bgColor">
@@ -65,4 +65,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

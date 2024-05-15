@@ -1,12 +1,13 @@
 import React from "react";
 import Menubar from "../Menubar";
 import Footer from "../Footer";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Menubar />
-      {children}
+      <Outlet />
       <Footer />
     </>
   );

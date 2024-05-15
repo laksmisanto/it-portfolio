@@ -10,6 +10,7 @@ import Gallery from "@/components/Gallery/Gallery";
 import ContactUs from "@/components/ContactUs/ContactUs";
 import UxuiDesignPage from "./pages/uxui-design/UxuiDesignPage";
 import WebDesignPage from "./pages/web-design/WebDesignPage";
+import PageNotFound from "./pages/pagenotfound/PageNotFound";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Route path="pages/uxui-design" element={<UxuiDesignPage />} />
           <Route path="pages/web-design" element={<WebDesignPage />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );

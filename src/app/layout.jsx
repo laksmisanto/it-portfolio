@@ -1,15 +1,12 @@
 "use client";
 import "./globals.css";
-import { BrowserRouter } from "react-router-dom";
-import Home from "./page";
+import Layout from "@/components/Layout";
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <BrowserRouter>
-          <Home />
-        </BrowserRouter>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

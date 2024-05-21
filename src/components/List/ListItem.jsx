@@ -1,10 +1,10 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ListItem = ({ children, className, href }) => {
   return (
     <li className={`${className}`}>
-      <Link to={href} replace={false}>
+      <Link href={href} replace={false}>
         {children}
       </Link>
     </li>

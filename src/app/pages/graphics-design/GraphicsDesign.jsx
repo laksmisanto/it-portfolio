@@ -60,7 +60,7 @@ const GraphicsDesign = () => {
                 </Flex>
               </Flex>
               <Link
-                to="#"
+                to="pages/form"
                 className="font-primaryFont text-base text-bgColor px-4 py-2 bg-btnBg border border-btnBg rounded hover:bg-bgColor hover:text-btnBg duration-150 ease-linear mt-2 mb-4 inline-block"
               >
                 Admission

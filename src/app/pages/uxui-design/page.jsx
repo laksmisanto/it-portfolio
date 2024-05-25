@@ -2,7 +2,6 @@ import Container from "@/components/Container";
 import Flex from "@/components/Flex/Flex";
 import Grid from "@/components/Grid";
 import React from "react";
-import { Link } from "react-router-dom";
 import Image from "next/image";
 import BannerImage from "../../../assets/BannerImage.webp";
 import {
@@ -11,9 +10,10 @@ import {
   CourseJobPositionsData,
   CourseRequirementsData,
   SoftwareCourseData,
-} from "./GraphicsCourseData";
+} from "./UxuiDesign";
+import Link from "next/link";
 
-const GraphicsDesign = () => {
+const UxuiDesignPage = () => {
   return (
     <>
       <div className="bg-bgColor py-10 ">
@@ -21,7 +21,7 @@ const GraphicsDesign = () => {
           <Grid className="grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h2 className="font-primaryFont font-bold text-3xl text-textColor pb-3">
-                Graphics Design Course Details
+                UX/UI Design Course Details
               </h2>
               <p className="font-primaryFont text-base text-textColor">
                 Considering the growing demand for visual content, marketers are
@@ -60,7 +60,7 @@ const GraphicsDesign = () => {
                 </Flex>
               </Flex>
               <Link
-                to="pages/form"
+                href="pages/form"
                 className="font-primaryFont text-base text-bgColor px-4 py-2 bg-btnBg border border-btnBg rounded hover:bg-bgColor hover:text-btnBg duration-150 ease-linear mt-2 mb-4 inline-block"
               >
                 Admission
@@ -153,4 +153,4 @@ const GraphicsDesign = () => {
   );
 };
 
-export default GraphicsDesign;
+export default UxuiDesignPage;

@@ -2,7 +2,6 @@ import Container from "@/components/Container";
 import Flex from "@/components/Flex/Flex";
 import Grid from "@/components/Grid";
 import React from "react";
-import { Link } from "react-router-dom";
 import Image from "next/image";
 import BannerImage from "../../../assets/BannerImage.webp";
 import {
@@ -12,6 +11,7 @@ import {
   CourseRequirementsData,
   SoftwareCourseData,
 } from "./WebDesign";
+import Link from "next/link";
 
 const WebDesignPage = () => {
   return (
@@ -60,7 +60,7 @@ const WebDesignPage = () => {
                 </Flex>
               </Flex>
               <Link
-                to="pages/form"
+                href="pages/form"
                 className="font-primaryFont text-base text-bgColor px-4 py-2 bg-btnBg border border-btnBg rounded hover:bg-bgColor hover:text-btnBg duration-150 ease-linear mt-2 mb-4 inline-block"
               >
                 Admission

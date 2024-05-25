@@ -2,13 +2,9 @@
 import React from "react";
 import Container from "../Container";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
 import Grid from "../Grid";
 import { AllCourseData } from "./AllCourseData";
 import CourseItem from "./CourseItem";
-import Flex from "../Flex/Flex";
-import img from "../../assets/graphicsDesign.webp";
 
 const Course = () => {
   let count = 0;

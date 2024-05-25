@@ -14,7 +14,7 @@ const Menubar = () => {
           <Flex className="justify-center items-center py-4">
             <div className="w-1/5">
               <span className="font-primaryFont text-xl font-bold text-btnBg">
-                <Link href="/">LaksmiSanto</Link>
+                <Link href="/">Santo</Link>
               </span>
             </div>
             <nav className="w-4/5 hidden md:block">
